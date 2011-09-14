@@ -21,16 +21,15 @@
 -->
 
 <mx:Module xmlns:mx="http://www.adobe.com/2006/mxml" 
-	xmlns:maps="org.bigbluebutton.modules.deskShare.maps.*"
+	creationComplete="onCreationComplete()" 
 	implements="org.bigbluebutton.common.IBigBlueButtonModule"
-	creationComplete="onCreationComplete()" xmlns:maps1="org.bigbluebutton.modules.deskshare.maps.*">
+	xmlns:maps="org.bigbluebutton.modules.deskshare.maps.*">
 	
-	<maps1:DeskshareEventMap id="deskshareGlobalEventMap" />
+	<maps:DeskshareEventMap id="deskshareGlobalEventMap" />
 
 	<mx:Script>
 		<![CDATA[
-			import com.asfusion.mate.events.Dispatcher;
-			
+			import com.asfusion.mate.events.Dispatcher;			
 			import org.bigbluebutton.common.LogUtil;
 			import org.bigbluebutton.common.events.CloseWindowEvent;
 			import org.bigbluebutton.common.events.OpenWindowEvent;

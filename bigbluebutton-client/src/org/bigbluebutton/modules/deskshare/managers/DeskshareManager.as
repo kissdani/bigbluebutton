@@ -24,6 +24,7 @@ package org.bigbluebutton.modules.deskshare.managers
 	import org.bigbluebutton.common.LogUtil;
 	import org.bigbluebutton.main.events.MadePresenterEvent;
 	import org.bigbluebutton.modules.deskshare.services.DeskshareService;
+	import org.bigbluebutton.modules.deskshare.DeskShareModule;
 			
 	public class DeskshareManager
 	{		

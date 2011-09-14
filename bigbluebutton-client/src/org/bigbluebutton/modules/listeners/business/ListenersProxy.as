@@ -28,6 +28,7 @@ package org.bigbluebutton.modules.listeners.business
 	import org.bigbluebutton.modules.listeners.events.ListenersEvent;
 	import org.bigbluebutton.modules.listeners.events.StartListenersModuleEvent;
 	import org.bigbluebutton.modules.listeners.events.StopListenersModuleEvent;
+	import org.bigbluebutton.modules.listeners.ListenersModule;
 
 	public class ListenersProxy
 	{		

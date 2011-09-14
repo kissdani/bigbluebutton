@@ -40,7 +40,7 @@ $Id: $
 	<mx:Script>
 		<![CDATA[
 			import com.asfusion.mate.events.Dispatcher;
-			
+			import org.bigbluebutton.common.IBigBlueButtonModule;
 			import org.bigbluebutton.common.LogUtil;
 			import org.bigbluebutton.modules.classyaudio.events.StartClassAudioEvent;
 			import org.bigbluebutton.modules.classyaudio.events.StopClassAudioEvent;

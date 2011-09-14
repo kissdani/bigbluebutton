@@ -9,26 +9,26 @@
 	<property name="RESOURCES_DIR" value="${BASE_DIR}/resources" />	
 	<property name="PROD_RESOURCES_DIR" value="${RESOURCES_DIR}/prod" />	
 	<property name="SRC_DIR" value="${BASE_DIR}/src" />
-		
+	<property name="MODULES_DIR" value="org/bigbluebutton/modules" />
 	<property name="OUTPUT_DIR" value="${BASE_DIR}/bin" />
 	<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar" />
 
 	<!-- Declare module names here -->
 	<property name="BBB_MAIN_TEST" value="BigBlueButtonTest" />
 	<property name="BBB_MAIN" value="BigBlueButton" />
-	<property name="CHAT" value="ChatModule" />
-	<property name="VIEWERS" value="ViewersModule" />
-	<property name="LISTENERS" value="ListenersModule" />
-	<property name="PRESENT" value="PresentModule" />
-	<property name="DESKSHARE" value="DeskShareModule" />
-	<property name="DESKSHARE_SA" value="DeskshareStandalone" />
-	<property name="PHONE" value="PhoneModule" />
-	<property name="VIDEO" value="VideoconfModule" />
-	<property name="WHITEBOARD" value="WhiteboardModule" />
-	<property name="DYN_INFO" value="DynamicInfoModule" />
-	<property name="BREAKOUT" value="BreakoutModule" />
-	<property name="CLASSROOM_AUDIO" value="ClassroomAudioModule" />
-	<property name="SETTINGS" value="SettingsModule" />
+	<property name="CHAT" value="${MODULES_DIR}/chat/ChatModule" />
+	<property name="VIEWERS" value="${MODULES_DIR}/viewers/ViewersModule" />
+	<property name="LISTENERS" value="${MODULES_DIR}/listeners/ListenersModule" />
+	<property name="PRESENT" value="${MODULES_DIR}/present/PresentModule" />
+	<property name="DESKSHARE" value="${MODULES_DIR}/deskshare/DeskShareModule" />
+	<property name="DESKSHARE_SA" value="${MODULES_DIR}/deskshare/DeskshareStandalone" />
+	<property name="PHONE" value="${MODULES_DIR}/phone/PhoneModule" />
+	<property name="VIDEO" value="${MODULES_DIR}/videoconf/VideoconfModule" />
+	<property name="WHITEBOARD" value="${MODULES_DIR}/whiteboard/WhiteboardModule" />
+	<property name="DYN_INFO" value="${MODULES_DIR}/dynamicinfo/DynamicInfoModule" />
+	<property name="BREAKOUT" value="${MODULES_DIR}/breakout/BreakoutModule" />
+	<property name="CLASSROOM_AUDIO" value="${MODULES_DIR}/classyaudio/ClassroomAudioModule" />
+	<property name="SETTINGS" value="${MODULES_DIR}/settings/SettingsModule" />
 	<target name="init-ant-contrib">
 		<property name="ant-contrib.jar" location="${BASE_DIR}/build/lib/ant-contrib-0.6.jar"/>
 		<taskdef resource="net/sf/antcontrib/antcontrib.properties" classpath="${ant-contrib.jar}"/>
@@ -166,6 +166,7 @@
 				<target-player>10.3.0</target-player>
 				<load-config filename="@{flex}/frameworks/flex-config.xml" />
 				<source-path path-element="@{flex}/frameworks" />
+				<source-path path-element="${SRC_DIR}" />
 				<compiler.library-path dir="@{flex}/frameworks" append="true">
 					<include name="libs" />
 					<include name="../bundles/{locale}" />
@@ -191,6 +192,7 @@
 				<target-player>10.3.0</target-player>
 				<load-config filename="@{flex}/frameworks/flex-config.xml" />
 				<source-path path-element="@{flex}/frameworks" />
+				<source-path path-element="${SRC_DIR}" />
 				<compiler.library-path dir="@{flex}/frameworks" append="true">
 					<include name="libs" />
 					<include name="../bundles/{locale}" />

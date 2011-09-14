@@ -23,6 +23,7 @@
 <EventMap xmlns:mx="http://www.adobe.com/2006/mxml" xmlns="http://mate.asfusion.com/">
 	<mx:Script>
 		<![CDATA[
+			import org.bigbluebutton.modules.videoconf.VideoconfModule;
 			import mx.collections.ArrayCollection;
 			import mx.controls.Alert;
 			

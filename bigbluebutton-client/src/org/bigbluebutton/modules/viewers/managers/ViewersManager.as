@@ -28,6 +28,7 @@ package org.bigbluebutton.modules.viewers.managers
 	import org.bigbluebutton.modules.viewers.events.ViewersModuleStartedEvent;
 	import org.bigbluebutton.modules.viewers.model.ViewerOptions;
 	import org.bigbluebutton.modules.viewers.views.ViewersWindow;
+	import org.bigbluebutton.modules.viewers.ViewersModule;
 
 	public class ViewersManager
 	{

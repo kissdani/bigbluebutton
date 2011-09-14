@@ -5,7 +5,7 @@
 		<![CDATA[
 			import org.bigbluebutton.modules.videoconf.events.OpenPublishWindowEvent;
 			import com.asfusion.mate.events.Dispatcher;
-			
+			import org.bigbluebutton.common.IBigBlueButtonModule;
 			import mx.controls.Alert;
 			
 			import org.bigbluebutton.common.LogUtil;

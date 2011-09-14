@@ -27,7 +27,7 @@
 	<mx:Script>
 		<![CDATA[
 			import com.asfusion.mate.events.Dispatcher;
-			
+			import org.bigbluebutton.common.IBigBlueButtonModule;
 			import org.bigbluebutton.modules.breakout.events.StartBreakoutModule;
 			
 			private var globalDispatcher:Dispatcher;

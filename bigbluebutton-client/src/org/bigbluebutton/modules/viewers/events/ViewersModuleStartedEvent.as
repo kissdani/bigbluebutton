@@ -19,6 +19,7 @@
 package org.bigbluebutton.modules.viewers.events
 {
 	import flash.events.Event;
+	import org.bigbluebutton.modules.viewers.ViewersModule;
 
 	public class ViewersModuleStartedEvent extends Event
 	{

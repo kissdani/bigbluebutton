@@ -24,7 +24,7 @@
 	<mx:Script>
 		<![CDATA[
 			import com.asfusion.mate.events.Dispatcher;
-			
+			import org.bigbluebutton.common.IBigBlueButtonModule;
 			import mx.controls.Button;
 			import mx.controls.ComboBox;
 			import mx.controls.Label;
@@ -35,9 +35,6 @@
 			import org.bigbluebutton.common.events.CloseWindowEvent;
 			import org.bigbluebutton.common.events.OpenWindowEvent;
 			import org.bigbluebutton.common.events.ToolbarButtonEvent;
-			import org.bigbluebutton.modules.dynamicinfo.DynamicInfoButton;
-			import org.bigbluebutton.modules.dynamicinfo.DynamicInfoComboBox;
-			import org.bigbluebutton.modules.dynamicinfo.DynamicInfoLabel;
 			
 			private var _moduleName:String = "Dynamic Info Module";			
 			private var _attributes:Object;
