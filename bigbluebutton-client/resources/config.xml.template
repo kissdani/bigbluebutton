@@ -11,7 +11,7 @@
     
 	<modules>
 		
-		<!-- module name="SettingsModule" url="SettingsModule.swf?v=VERSION"
+		<!-- module name="SettingsModule" url="org/bigbluebutton/modules/settings/SettingsModule.swf?v=VERSION"
 			voice="rtmp://HOST/video"
 			video="rtmp://HOST/video"
 			deskshare="rtmp://HOST/deskShare"
@@ -20,7 +20,7 @@
 			check_deskshare="true"
 		/-->
 		
-		<module name="ChatModule" url="ChatModule.swf?v=VERSION" 
+		<module name="ChatModule" url="org/bigbluebutton/modules/chat/ChatModule.swf?v=VERSION" 
 			uri="rtmp://HOST/bigbluebutton" 
 			dependsOn="ViewersModule"	
 			translationOn="true"
@@ -28,32 +28,32 @@
 			privateEnabled="true"  
 		/>
 		
-		<module name="ViewersModule" url="ViewersModule.swf?v=VERSION" 
+		<module name="ViewersModule" url="org/bigbluebutton/modules/viewers/ViewersModule.swf?v=VERSION" 
 			uri="rtmp://HOST/bigbluebutton" 
 			host="http://HOST/bigbluebutton/api/enter"
 			allowKickUser="false"
 			windowVisible="true"
 		/>
 			
-		<module name="ListenersModule" url="ListenersModule.swf?v=VERSION" 
+		<module name="ListenersModule" url="org/bigbluebutton/modules/listeners/ListenersModule.swf?v=VERSION" 
 			uri="rtmp://HOST/bigbluebutton" 
 			recordingHost="http://HOST"
 			windowVisible="true"
 		/>
 		
 		<module name="DeskShareModule" 
-			url="DeskShareModule.swf?v=VERSION" 
+			url="org/bigbluebutton/modules/deskshare/DeskShareModule.swf?v=VERSION" 
 			uri="rtmp://HOST/deskShare"
 		/>
 		
-		<module name="PhoneModule" url="PhoneModule.swf?v=VERSION" 
+		<module name="PhoneModule" url="org/bigbluebutton/modules/phone/PhoneModule.swf?v=VERSION" 
 			uri="rtmp://HOST/sip" 
 			autoJoin="true"
 			showButton="true"
 			dependsOn="ViewersModule"
 		/>
 
-		<!--<module name="ClassroomAudioModule" url="ClassroomAudioModule.swf?v=VERSION" 
+		<!--<module name="ClassroomAudioModule" url="org/bigbluebutton/modules/classyaudio/ClassroomAudioModule.swf?v=VERSION" 
                         uri="rtmp://HOST/sip" 
                         dependsOn="ViewersModule"
                 />-->
@@ -64,7 +64,7 @@
 			dependsOn="ViewersModule"
 		/>-->
 		
-		<module name="VideoconfModule" url="VideoconfModule.swf?v=VERSION" 
+		<module name="VideoconfModule" url="org/bigbluebutton/modules/videoconf/VideoconfModule.swf?v=VERSION" 
 			uri="rtmp://HOST/video"
 			dependsOn="ViewersModule"
 			videoQuality="70"
@@ -83,12 +83,12 @@
 			h264Profile="main"			
 		/>
 		
-		<module name="WhiteboardModule" url="WhiteboardModule.swf?v=VERSION" 
+		<module name="WhiteboardModule" url="org/bigbluebutton/modules/whitebard/WhiteboardModule.swf?v=VERSION" 
 			uri="rtmp://HOST/bigbluebutton" 
 			dependsOn="PresentModule"
 		/>
 		
-		<module name="PresentModule" url="PresentModule.swf?v=VERSION" 
+		<module name="PresentModule" url="org/bigbluebutton/modules/present/PresentModule.swf?v=VERSION" 
 			uri="rtmp://HOST/bigbluebutton" 
 			host="http://HOST" 
 			dependsOn="ViewersModule"
