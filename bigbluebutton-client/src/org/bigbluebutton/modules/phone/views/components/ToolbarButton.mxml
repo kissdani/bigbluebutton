@@ -36,7 +36,7 @@
 			
 			import org.bigbluebutton.common.LogUtil;
 			import org.bigbluebutton.main.events.BBBEvent;
-			import org.bigbluebutton.main.views.MainToolbar;
+			import org.bigbluebutton.main.ui.views.MainToolbar;
 			import org.bigbluebutton.modules.phone.events.CallConnectedEvent;
 			import org.bigbluebutton.modules.phone.events.CallDisconnectedEvent;
 			import org.bigbluebutton.modules.phone.views.assets.Images;

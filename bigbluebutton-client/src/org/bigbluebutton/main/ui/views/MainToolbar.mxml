@@ -22,7 +22,7 @@
 
 <mx:ApplicationControlBar xmlns:mx="http://www.adobe.com/2006/mxml" 
 	xmlns:mate="http://mate.asfusion.com/"
-	enabled="true" xmlns:views="org.bigbluebutton.main.views.*" >   
+	enabled="true" xmlns:views="org.bigbluebutton.main.ui.views.*" >   
 	
 	<mate:Listener type="{ToolbarButtonEvent.ADD}" method="handleAddToolbarButtonEvent" />	
 	<mate:Listener type="{ToolbarButtonEvent.REMOVE}" method="handleRemoveToolbarButtonEvent"/>

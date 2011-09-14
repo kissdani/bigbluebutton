@@ -42,7 +42,7 @@
 			import mx.resources.ResourceManager;
 			
 			import org.bigbluebutton.common.events.LocaleChangeEvent;
-			import org.bigbluebutton.main.views.MainCanvas;
+			import org.bigbluebutton.main.ui.views.MainCanvas;
 			import org.bigbluebutton.modules.chat.events.TranscriptEvent;
 			import org.bigbluebutton.util.i18n.ResourceUtil;
 			

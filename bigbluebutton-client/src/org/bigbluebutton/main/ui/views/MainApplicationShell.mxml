@@ -23,7 +23,7 @@
 <mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" 
 		xmlns:flexmdi="flexlib.mdi.containers.*"
 		xmlns:logModule="org.bigbluebutton.modules.log.view.components.*"
-		xmlns:views="org.bigbluebutton.main.views.*"
+		xmlns:views="org.bigbluebutton.main.ui.views.*"
 		xmlns:mate="http://mate.asfusion.com/"
 		xmlns:maps="org.bigbluebutton.main.maps.*"
 		xmlns:api="org.bigbluebutton.main.api.*"

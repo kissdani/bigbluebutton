@@ -38,7 +38,7 @@
 			
 			import org.bigbluebutton.common.LogUtil;
 			import org.bigbluebutton.main.events.BBBEvent;
-			import org.bigbluebutton.main.views.MainCanvas;
+			import org.bigbluebutton.main.ui.views.MainCanvas;
 			import org.bigbluebutton.modules.videoconf.events.CloseAllWindowsEvent;
 			import org.bigbluebutton.modules.videoconf.model.VideoConfOptions;
 		

@@ -33,7 +33,7 @@
 			import org.bigbluebutton.common.IBbbModuleWindow;
 			import org.bigbluebutton.common.Images;
 			import org.bigbluebutton.common.events.OpenWindowEvent;
-			import org.bigbluebutton.main.views.MainToolbar;
+			import org.bigbluebutton.main.ui.views.MainToolbar;
 			import org.bigbluebutton.util.i18n.ResourceUtil;
 			
 			[Embed(source="images/note_edit.png")]

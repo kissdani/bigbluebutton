@@ -70,7 +70,7 @@
 			import org.bigbluebutton.common.Images;
 			import org.bigbluebutton.common.events.LocaleChangeEvent;
 			import org.bigbluebutton.main.events.MadePresenterEvent;
-			import org.bigbluebutton.main.views.MainCanvas;
+			import org.bigbluebutton.main.ui.views.MainCanvas;
 			import org.bigbluebutton.modules.present.api.IPresentationButton;
 			import org.bigbluebutton.modules.present.events.AddButtonToPresentationEvent;
 			import org.bigbluebutton.modules.present.events.AddOverlayCanvasEvent;

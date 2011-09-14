@@ -32,7 +32,7 @@ Notes.mxml is the main view of the SharedNotes application
 		<![CDATA[
 			import flexlib.mdi.events.MDIWindowEvent;
 			
-			import org.bigbluebutton.main.views.MainCanvas;
+			import org.bigbluebutton.main.ui.views.MainCanvas;
 
 			private var proxy:ExampleChatProxy;
 			public var moduleAttributes:Object;
