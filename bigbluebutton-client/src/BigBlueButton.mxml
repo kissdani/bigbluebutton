@@ -29,24 +29,43 @@
 	
 	<mx:Script>
 		<![CDATA[
-			import com.asfusion.mate.events.Dispatcher;			
-			import mx.managers.HistoryManager;
-			import org.bigbluebutton.main.ui.views.MainApplicationShell;
+			import com.asfusion.mate.events.Dispatcher;
 			
-		/**
-		 * Thse two lines are workaround for this. (ralam - Nov 8, 2008)
-		 * http://gregjessup.com/flex-3-advanceddatagrid-cannot-convert-mxmanagersdragmanagerimpl-to-mxmanagersidragmanager/
-		 * http://butterfliesandbugs.wordpress.com/2007/10/25/workaround-for-error-when-loading-popups-from-modules/
-		 */
-		import mx.managers.IDragManager; 
-		private var iDragManager:IDragManager;  
+			import mx.controls.Alert;
+			import mx.managers.HistoryManager;
+			import mx.managers.IDragManager;
+			
+			import org.bigbluebutton.core.B3Event;
+			import org.bigbluebutton.core.model.Connection;
+			import org.bigbluebutton.main.ui.views.MainApplicationShell; 
+			private var iDragManager:IDragManager;  
+	
+			/** another workaround - for this issue: https://bugs.adobe.com/jira/browse/SDK-13121*/
+			private var hist:HistoryManager
+			
+			
+			private var c:Connection;
+			private function init():void {
+				Alert.show("start");
+				c = new Connection("test", "rtmp://192.168.0.126/video");//, this);
+				c.addEventListener("connectionAsyncErrorEvent", handleErrorEvent);
+				c.addEventListener("connectedEvent", handleConnectedEvent);
+				c.connect();
+				//c.throwError();
+				Alert.show("end");
+			}
+			
+			private function handleErrorEvent(e:B3Event):void {
+				Alert.show("error");
+			}
 
-		/** another workaround - for this issue: https://bugs.adobe.com/jira/browse/SDK-13121*/
-		private var hist:HistoryManager
-
+			private function handleConnectedEvent(e:B3Event):void {
+				Alert.show("connected to " + e.payload['url']);
+			}
+			
 		]]>
 	</mx:Script>	
 		
-	<maps:ApplicationEventMap />	
-	<views:MainApplicationShell id="mainShell"/>		
+	<!--maps:ApplicationEventMap />	
+	<views:MainApplicationShell id="mainShell"/-->		
 </mx:Application>

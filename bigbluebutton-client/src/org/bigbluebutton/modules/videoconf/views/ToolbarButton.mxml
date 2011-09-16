@@ -28,8 +28,7 @@
 	
 	<mx:Script>
 		<![CDATA[
-			import com.asfusion.mate.events.Dispatcher;
-			
+			import com.asfusion.mate.events.Dispatcher;			
 			import org.bigbluebutton.common.Images;
 			import org.bigbluebutton.main.ui.views.MainToolbar;
 			import org.bigbluebutton.modules.videoconf.events.OpenPublishWindowEvent;

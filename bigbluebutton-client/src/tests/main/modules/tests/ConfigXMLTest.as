@@ -18,10 +18,8 @@
 */
 package tests.main.modules.tests
 {
-	import flash.utils.Timer;
-	
-	import mx.controls.Alert;
-	
+	import flash.utils.Timer;	
+	import mx.controls.Alert;	
 	import org.bigbluebutton.main.model.ConfigParameters;
 	import org.flexunit.Assert;
 	import org.flexunit.async.Async;
