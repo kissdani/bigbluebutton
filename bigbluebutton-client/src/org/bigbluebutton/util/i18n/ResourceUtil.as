@@ -19,6 +19,7 @@
 package org.bigbluebutton.util.i18n
 {
 	import com.adobe.utils.StringUtil;
+	
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	import flash.events.IEventDispatcher;
@@ -34,6 +35,7 @@ package org.bigbluebutton.util.i18n
 	import mx.resources.ResourceManager;
 	import mx.utils.StringUtil;
 	
+	import org.babelfx.events.LocaleEvent;
 	import org.bigbluebutton.common.LogUtil;
 	import org.bigbluebutton.common.events.LocaleChangeEvent;
 
@@ -133,6 +135,7 @@ package org.bigbluebutton.util.i18n
 			if (localeChain[0] != DEFAULT_LANGUAGE)
 				localeChain.push(DEFAULT_LANGUAGE);
 			resourceManager.localeChain = localeChain;
+			
 			update();
 		}
 		
@@ -147,6 +150,9 @@ package org.bigbluebutton.util.i18n
 		
 		public function update():void{
 			dispatchEvent(new Event(Event.CHANGE));
+			// Dispatch an l10nInjection event to trigger locale switching
+			// Then notify any watchers that the locale value has changed...
+			dispatchEvent(new LocaleEvent(LocaleEvent.LOAD_LOCALE, currentLanguage));
 		}
 		
 		[Bindable("change")]

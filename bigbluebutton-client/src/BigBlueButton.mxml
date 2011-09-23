@@ -27,7 +27,7 @@
 	xmlns:m="library://melomel/2010"
 	pageTitle="BigBlueButton"
 	layout="absolute" creationComplete="init()"
-	preloader="org.bigbluebutton.main.model.BigBlueButtonPreloader">
+	preloader="org.bigbluebutton.main.model.BigBlueButtonPreloader" >
 	
 	<mx:Script>
 		<![CDATA[
@@ -218,7 +218,7 @@
 	<m:Melomel/>
 	
 	<maps:ApplicationEventMap />	
-
+	<l10n:MainToolbarLocalization xmlns:l10n="org.bigbluebutton.main.l10n.maps.*" />
 	<views:MainApplicationShell id="mainShell"/>	
 	
 	<mate:Listener type="{BBBEvent.LOGIN_EVENT}" method="handleLoginEvent"/>

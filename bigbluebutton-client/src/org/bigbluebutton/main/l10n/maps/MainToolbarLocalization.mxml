@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<maps:LocaleMap xmlns="http://l10n.babelfx.org/" 
+				xmlns:maps="org.babelfx.maps.*"
+				xmlns:inj="org.babelfx.injectors.*"
+				xmlns:proxys="org.babelfx.proxys.*"
+				xmlns:mx="http://www.adobe.com/2006/mxml" 
+				xmlns:factory="mx.core.*" 
+				enableLog="true">
+	
+	<mx:Metadata>
+		[ResourceBundle("bbbResources")]
+	</mx:Metadata>
+	
+	<mx:Script>
+		<![CDATA[
+			import org.bigbluebutton.main.views.MainToolbar;
+		]]>
+	</mx:Script>
+	
+	<inj:ResourceInjector bundleName="bbbResources" target="{MainToolbar}">
+		<proxys:ResourceSetter 	property="btnLogout.label" 	key="bbb.mainToolbar.logoutBtn" />
+		<proxys:ResourceSetter 	property="helpBtn.label" 	key="bbb.mainToolbar.helpBtn" />
+	</inj:ResourceInjector>
+	
+</maps:LocaleMap>

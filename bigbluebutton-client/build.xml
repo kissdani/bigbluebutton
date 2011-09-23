@@ -252,7 +252,7 @@
 					<target-player>10.3.0</target-player>
 					<load-config filename="@{flex}/frameworks/flex-config.xml" />
 					<source-path path-element="@{flex}/frameworks" />
-					
+					<source-path path-element="${BASE_DIR}/locale/{locale}" />
 					<!--
 				  		Dump out resources to find out what resources to include building the locales.
 				  		http://forums.adobe.com/thread/758619
