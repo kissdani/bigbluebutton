@@ -39,7 +39,7 @@ $Id: $
 			import org.bigbluebutton.common.events.DragWindowEvent;
 			import org.bigbluebutton.common.events.OpenWindowEvent;
 			import org.bigbluebutton.common.events.CloseWindowEvent;
-			import org.bigbluebutton.main.views.MainCanvas;
+			import org.bigbluebutton.main.ui.views.MainCanvas;
 			import org.bigbluebutton.modules.videoconf.business.VideoWindowItf;
 			import org.bigbluebutton.modules.videoconf.events.OpenVideoWindowEvent;
 			import org.bigbluebutton.util.i18n.ResourceUtil;

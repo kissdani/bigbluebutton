@@ -27,7 +27,7 @@ package org.bigbluebutton.modules.videoconf.business
 	import org.bigbluebutton.common.IBbbModuleWindow;
 	import org.bigbluebutton.common.events.DragWindowEvent;
 	import org.bigbluebutton.common.events.CloseWindowEvent;
-	import org.bigbluebutton.main.views.MainCanvas;
+	import org.bigbluebutton.main.ui.views.MainCanvas;
 	import org.bigbluebutton.util.i18n.ResourceUtil;
 	
 	import mx.core.UIComponent;

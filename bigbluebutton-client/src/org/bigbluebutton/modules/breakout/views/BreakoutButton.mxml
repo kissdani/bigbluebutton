@@ -29,7 +29,7 @@
 			import mx.events.CloseEvent;
 			import mx.managers.PopUpManager;
 			
-			import org.bigbluebutton.main.views.MainToolbar;
+			import org.bigbluebutton.main.ui.views.MainToolbar;
 			
 			private var window:BreakoutWindow;
 			

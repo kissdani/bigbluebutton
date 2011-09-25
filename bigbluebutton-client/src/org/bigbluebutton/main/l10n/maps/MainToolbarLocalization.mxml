@@ -13,12 +13,13 @@
 	
 	<mx:Script>
 		<![CDATA[
-			import org.bigbluebutton.main.views.MainToolbar;
+			import org.bigbluebutton.main.ui.views.MainToolbar;
 		]]>
 	</mx:Script>
 	
 	<inj:ResourceInjector bundleName="bbbResources" target="{MainToolbar}">
-		<proxys:ResourceSetter 	property="btnLogout.label" 	key="bbb.mainToolbar.logoutBtn" />
+		<proxys:ResourceSetter 	property="logoutBtn.label" 	key="bbb.mainToolbar.logoutBtn" />
+		<proxys:ResourceSetter 	property="logoutBtn.toolTip" 	key="bbb.mainToolbar.logoutBtn" />
 		<proxys:ResourceSetter 	property="helpBtn.label" 	key="bbb.mainToolbar.helpBtn" />
 	</inj:ResourceInjector>
 	

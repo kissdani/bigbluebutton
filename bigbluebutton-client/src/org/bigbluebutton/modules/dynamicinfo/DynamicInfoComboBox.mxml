@@ -4,7 +4,7 @@
 	
 	<mx:Script>
 		<![CDATA[
-			import org.bigbluebutton.main.views.MainToolbar;
+			import org.bigbluebutton.main.ui.views.MainToolbar;
 			
 			public function getAlignment():String{
 				return MainToolbar.ALIGN_RIGHT;

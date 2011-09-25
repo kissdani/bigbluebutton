@@ -26,7 +26,9 @@
 	       showCloseButton="false"
 	       implements="org.bigbluebutton.common.IBbbModuleWindow" 
 	       creationComplete="onCreationComplete()"
-	       xmlns:components="org.bigbluebutton.modules.chat.view.components.*" xmlns:mate="http://mate.asfusion.com/" xmlns:views="org.bigbluebutton.modules.chat.views.*">
+	       xmlns:components="org.bigbluebutton.modules.chat.view.components.*" 
+	       xmlns:mate="http://mate.asfusion.com/" 
+	       xmlns:views="org.bigbluebutton.modules.chat.views.*">
 	
 	<mx:Script>
 		<![CDATA[
@@ -42,7 +44,7 @@
 			import mx.resources.ResourceManager;
 			
 			import org.bigbluebutton.common.events.LocaleChangeEvent;
-			import org.bigbluebutton.main.views.MainCanvas;
+			import org.bigbluebutton.main.ui.views.MainCanvas;
 			import org.bigbluebutton.modules.chat.events.TranscriptEvent;
 			import org.bigbluebutton.util.i18n.ResourceUtil;
 			
