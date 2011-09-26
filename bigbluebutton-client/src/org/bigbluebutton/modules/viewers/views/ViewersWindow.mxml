@@ -33,7 +33,6 @@
 	
     <mx:Script>
         <![CDATA[
-        	import org.bigbluebutton.modules.viewers.model.ViewerOptions;
 			import com.asfusion.mate.events.Dispatcher;
 			
 			import flexlib.mdi.events.MDIWindowEvent;
@@ -46,6 +45,7 @@
 			import mx.events.ListEvent;
 			
 			import org.bigbluebutton.common.Images;
+			import org.bigbluebutton.common.LogUtil;
 			import org.bigbluebutton.common.Role;
 			import org.bigbluebutton.common.UserManager;
 			import org.bigbluebutton.common.events.LocaleChangeEvent;
@@ -58,6 +58,7 @@
 			import org.bigbluebutton.main.model.users.events.RoleChangeEvent;
 			import org.bigbluebutton.main.ui.views.MainCanvas;
 			import org.bigbluebutton.modules.viewers.events.ChangeStatusEvent;
+			import org.bigbluebutton.modules.viewers.model.ViewerOptions;
 			import org.bigbluebutton.util.i18n.ResourceUtil;
 			
 			[Bindable] private var windowTitle:String = ResourceUtil.getInstance().getString('bbb.viewers.title',["", ""]);
@@ -111,6 +112,7 @@
         	}           
         	
         	private function assignPresenterClicked():void {
+				LogUtil.debug("**** Switching to be Presenter ****");
         		// Ignore if the selected user is already the presenter.
         		if (viewersGrid.selectedItem == null || viewersGrid.selectedItem.presenter) return;
         		

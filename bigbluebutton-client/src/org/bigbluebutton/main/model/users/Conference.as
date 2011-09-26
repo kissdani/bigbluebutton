@@ -22,6 +22,7 @@ package org.bigbluebutton.main.model.users
 	
 	import org.bigbluebutton.common.LogUtil;
 	import org.bigbluebutton.common.Role;
+	import org.bigbluebutton.core.BBB;
 
 	public class Conference {		
 		private var _myUserid : Number;
@@ -140,7 +141,7 @@ package org.bigbluebutton.main.model.users
 			for (var i:int = 0; i < users.length; i++)
 			{
 				aUser = users.getItemAt(i) as BBBUser;
-				
+				LogUtil.debug("USERID = " + aUser.userid);
 				if (aUser.userid == userid) {
 					return {index:i, participant:aUser};
 				}
@@ -148,6 +149,16 @@ package org.bigbluebutton.main.model.users
 			
 			// Participant not found.
 			return null;
+		}
+		
+		public function isUserPresenter(userid:Number):Boolean {
+			var user:Object = getParticipantIndex(userid);
+			if (user == null) {
+				LogUtil.warn("User not found with id=" + userid);
+				return false;
+			}
+			var a:BBBUser = user.participant as BBBUser;
+			return a.presenter;
 		}
 
 		/**
